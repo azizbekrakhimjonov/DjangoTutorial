@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<!--<h1>Members</h1>-->
+
+<!--<table border="1">-->
+<!--    {% for x in mymembers %}-->
+<!--    <tr>-->
+<!--        <td>{{ x.id }}</td>-->
+<!--        <td>{{ x.firstname }}</td>-->
+<!--        <td>{{ x.lastname }}</td>-->
+<!--    </tr>-->
+<!--    {% endfor %}-->
+<!--</table>-->
+
+
+
+<h1>Members</h1>
+
+<table border="1">
+{% for x in mymembers %}
+<tr>
+<td>{{ x.id }}</td>
+<td>{{ x.firstname }}</td>
+<td>{{ x.lastname }}</td>
+</tr>
+{% endfor %}
+</table>
+
+<p>
+<a href="add/">Add member</a>
+</p>
+</body>
+</html>
